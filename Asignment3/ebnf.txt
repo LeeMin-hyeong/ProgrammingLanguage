@@ -1,0 +1,11 @@
+<program> → {<declaration>} {<statement>}
+<declaration> → <type> <var> ;
+<statement> → <var> = <aexpr> ; | print <aexpr> ; | while '('<bexpr>')' '{' {<statement>} '}'
+<bexpr> → <aexpr> <relop> <aexpr>
+<relop> → == | != | < | > | <= | >=
+<aexpr> → <term> {+ <term> | - <term>}
+<term> → <number> | <var>
+<number> → <dec> {<dec>}
+<type> → int
+<dec> → 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+<var> → a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z
